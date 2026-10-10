@@ -1,0 +1,52 @@
+REM ============================================================
+REM  Title       : Windows 11 - Bluetooth HID Keystroke Injection Demo
+REM  Platform    : Windows 11
+REM  Transport   : Flipper Zero -> Bluetooth HID (no USB cable)
+REM  Author      : Akshit
+REM  Version     : 1.0
+REM  Description : Proof-of-concept BadUSB payload. Opens the Flipper
+REM                Zero website in the default browser, launches Notepad,
+REM                and types a structured multi-line message with tuned
+REM                delays to guarantee reliable keystroke delivery over BT.
+REM  Legal       : For authorized testing / education ONLY. See repo
+REM                README and DISCLAIMER before use.
+REM ============================================================
+
+DELAY 1000
+
+REM --- Open Flipper Zero website in default browser ---
+GUI r
+DELAY 500
+STRING cmd /c start https://flipperzero.one/
+ENTER
+DELAY 3000
+
+REM --- Open Notepad ---
+GUI r
+DELAY 500
+STRING notepad
+ENTER
+DELAY 3000
+
+REM --- Type structured message (DELAY after every ENTER for reliability) ---
+STRING Hello from Flipper Zero!
+ENTER
+DELAY 700
+
+STRING This is a BadUSB demo
+ENTER
+DELAY 700
+
+STRING It types into Notepad reliably
+ENTER
+DELAY 700
+
+STRING The Flipper website is now open
+ENTER
+DELAY 700
+
+ENTER
+DELAY 500
+
+STRING - by Akshit
+ENTER

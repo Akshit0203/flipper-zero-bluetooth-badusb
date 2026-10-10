@@ -1,0 +1,18 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+.vscode/
+.idea/
+
+# Large raw source media kept out of the repo
+# (Only the curated demo.mp4 under assets/video/ is tracked.)
+*.raw.mp4
+raw/
+source-media/
+
+# Temporary / build artifacts
+*.tmp
+*.log

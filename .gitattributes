@@ -1,0 +1,9 @@
+# Flipper Zero / Ducky Script payloads rely on CRLF line endings for reliable
+# typing — keep them CRLF on every checkout regardless of host OS.
+payloads/*.txt text eol=crlf
+
+# Treat media as binary (no diffing / no EOL normalization).
+*.mp4 binary
+*.jpg binary
+*.jpeg binary
+*.png binary

