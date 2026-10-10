@@ -242,14 +242,6 @@ Bluetooth HID keystroke injection is a **stealthy, wireless** evolution of the c
 
 ---
 
-## Author
-
-**Akshit** — Cybersecurity / Offensive Security enthusiast.
-
-Android payload adapted from an original Ducky Script by **SeenKid** (credited in the payload header).
-
----
-
 ## License
 
 Released under the [MIT License](LICENSE). The ethical-use terms in the [disclaimer](#-legal--ethical-disclaimer) apply to all use of this material.
