@@ -15,11 +15,8 @@
 
 > A hands-on security research project demonstrating how a Flipper Zero, acting as a **wireless Bluetooth keyboard (HID)**, can inject keystrokes and execute scripted payloads on a victim device **without any USB cable or physical contact** — and how the Bluetooth HID trust model makes this stealthy and repeatable.
 
-<div align="center">
-  <img src="assets/screenshots/demo-01-keystroke-injection.jpg" alt="Flipper Zero injecting keystrokes into Notepad over Bluetooth HID" width="760">
-  <br>
-  <em>Flipper Zero executing a Bluetooth HID payload into a Windows 11 host — no cable attached.</em>
-</div>
+<video src="https://github.com/user-attachments/assets/06796a4f-eaf3-4bb2-af22-d217bdcd265e" width="100%" controls></video>
+<br>
 
 ---
 
